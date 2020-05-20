@@ -1,22 +1,25 @@
 import React from "react";
 import "./style.css";
+// import BookContext from "../../utils/BookContext";
 
-function ResultCard() {
+function ResultCard(props) {
+    const { title, authors, description, image, link } = props;
+
     return (
-        <div className="card mb-3 resultCard">
+        <div className="card mb-3 resultCard" key={image}>
             <div className="row no-gutters">
                 <div className="col-md-1">
-                    <img src="https://via.placeholder.com/100" className="card-img img-fluid" alt="..." />
+                    <img src={image} className="card-img img-fluid" alt="..." />
                 </div>
                 <div className="col-md-11">
                     <div className="card-body">
-                        <h5 className="card-title">Harry Potter's Bookshelf</h5>
-                        <p className="card-text"><small className="text-muted">By John Granger</small></p>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>             
+                        <h5 className="card-title">{title}</h5>
+                        <p className="card-text"><small className="text-muted">By {authors.join(", ")}</small></p>
+                        <p className="card-text">{description}</p>             
                     </div>
                 </div>
                 <div className="resultBtns">
-                    <a href="google.com">View</a><button>Save</button>
+                    <a href={link} target="_blank">View</a><button>Save</button>
                 </div>
             </div>
         </div>

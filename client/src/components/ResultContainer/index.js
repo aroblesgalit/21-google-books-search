@@ -1,21 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./style.css";
 import ResultCard from "../ResultCard";
-import API from "../../utils/API";
+import BookContext from "../../utils/BookContext";
 
 function ResultContainer() {
-
-
-    API.getBooksByQuery("Harry Potter")
-        .then(res =>
-            console.log(res)
-        )
-        .catch(err => console.log(err));
+    const books = useContext(BookContext);
 
     return (
         <div className="resultContainer">
             <h3>Results</h3>
-            <ResultCard />
+            {
+                books.map(book => 
+                    <ResultCard 
+                        key={book.image} 
+                        title={book.title}
+                        authors={book.authors}
+                        description={book.description}
+                        image={book.image}
+                        link={book.link}
+                    />
+                )
+            }
         </div>
     );
 }
