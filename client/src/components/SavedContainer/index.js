@@ -14,10 +14,7 @@ function SavedContainer() {
 
     function loadBooks() {
         API.getBooks()
-            .then(res => {
-                setBooks(res.data);
-                console.log(res);
-            })
+            .then(res => setBooks(res.data))
             .catch(err => console.log(err));
     }
 
