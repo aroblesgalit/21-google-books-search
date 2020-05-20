@@ -9,10 +9,10 @@ function ResultContainer() {
     return (
         <div className="resultContainer">
             <h3>Results</h3>
-            {
-                books.map(book => 
-                    <ResultCard 
-                        key={book.image} 
+            {books.length ? (
+                books.map(book =>
+                    <ResultCard
+                        key={book.image}
                         title={book.title}
                         authors={book.authors}
                         description={book.description}
@@ -20,7 +20,9 @@ function ResultContainer() {
                         link={book.link}
                     />
                 )
-            }
+            ) : (
+                <p>No Results to Display</p>
+            )}
         </div>
     );
 }
