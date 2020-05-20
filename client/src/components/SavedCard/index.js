@@ -1,9 +1,8 @@
 import React from "react";
 import "./style.css";
-// import BookContext from "../../utils/BookContext";
 
-function ResultCard(props) {
-    const { title, authors, description, image, link } = props;
+function SavedCard(props) {
+    const { title, authors, description, image, link, deleteBook } = props;
 
     return (
         <div className="card mb-3 resultCard" key={image}>
@@ -19,11 +18,11 @@ function ResultCard(props) {
                     </div>
                 </div>
                 <div className="resultBtns">
-                    <a href={link} target="_blank" rel="noopener noreferrer">View</a><button>Save</button>
+                    <a href={link} target="_blank" rel="noopener noreferrer">View</a><button onClick={deleteBook}>Delete</button>
                 </div>
             </div>
         </div>
     );
 }
 
-export default ResultCard;
+export default SavedCard;
