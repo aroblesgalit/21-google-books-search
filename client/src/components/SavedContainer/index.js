@@ -1,7 +1,6 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import SavedCard from "../SavedCard";
-// import BookContext from "../../utils/BookContext";
 import API from "../../utils/API";
 
 function SavedContainer() {
