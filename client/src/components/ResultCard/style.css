@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+.resultCard {
+    border: 1px solid #c0c0c0;
+}
+
+.resultCard img {
+    width: auto;
+}
+
+.resultBtns {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px;
+}
+
+.resultBtns button {
+    margin-left: 14px;
+    padding: 0 20px;
+    height: 32px;
+    background-color: #EB6864;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.resultBtns button:hover {
+    background-color: rgb(223, 77, 72);
+}
+
+.resultBtns a {
+    margin-left: 14px;
+    padding: 6px 20px;
+    background-color: #EB6864;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.resultBtns a:hover {
+    text-decoration: none;
+    background-color: rgb(223, 77, 72);
+}
