@@ -1,5 +1,7 @@
 import axios from "axios";
 
+const API_KEY = process.env.REACT_APP_API_KEY;
+
 export default {
   // Gets all books
   getBooks: function() {
@@ -19,7 +21,7 @@ export default {
   },
 
   getBooksByQuery: function(query) {
-    let queryUrl = "https://www.googleapis.com/books/v1/volumes?q=" + query + "&key=AIzaSyAFGnOOlvmSYxkEqvTpfuWI9nS1PTfzk-U";
+    let queryUrl = "https://www.googleapis.com/books/v1/volumes?q=" + query + "&key=" + API_KEY;
     return new Promise((resolve, reject) => {
       axios
         .get(queryUrl)
