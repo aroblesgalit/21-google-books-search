@@ -10,7 +10,12 @@ header {
 }
 
 .logoMark, .navLink {
+    font-family: 'Roboto', sans-serif;
     color: #f2f2f2 !important;
+}
+
+.logoMark {
+    font-weight: 500;
 }
 
 .iconLink {

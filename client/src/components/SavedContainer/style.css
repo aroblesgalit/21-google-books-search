@@ -11,3 +11,7 @@
     border: 1px solid #00bdc3;
     border-radius: 4px;
 }
+
+.savedContainer h3 {
+    font-family: 'Roboto', sans-serif;
+}

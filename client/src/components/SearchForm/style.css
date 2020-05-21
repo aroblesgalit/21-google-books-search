@@ -20,6 +20,8 @@
     border: 1px solid #00bdc3;
     padding: 4px 6px;
     border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .searchForm a {
@@ -27,6 +29,7 @@
 }
 
 .searchForm h3 {
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 20px;
 }
 

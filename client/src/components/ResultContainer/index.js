@@ -21,7 +21,7 @@ function ResultContainer() {
                     />
                 )
             ) : (
-                <p>No Results to Display</p>
+                <p className="noResText">No Results to Display</p>
             )}
         </div>
     );
