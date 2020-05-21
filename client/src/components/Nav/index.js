@@ -11,8 +11,10 @@ function Nav() {
         </div>
         <div className="uk-navbar-right">
           <ul className="uk-navbar-nav">
-            <li><Link to="/" className="navLink">Search</Link></li>
-            <li><Link to="/saved" className="navLink">Saved</Link></li>
+            <li className=" textLink"><Link to="/" className="navLink">Search</Link></li>
+            <li className=" textLink"><Link to="/saved" className="navLink textLink">Saved</Link></li>
+            <li className="iconLink"><Link to="/" className="navLink" uk-icon="icon: search"></Link></li>
+            <li className="iconLink"><Link to="/saved" className="navLink" uk-icon="icon: bookmark"></Link></li>
           </ul>
         </div>
       </nav>

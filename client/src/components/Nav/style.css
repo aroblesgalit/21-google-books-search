@@ -13,6 +13,14 @@ header {
     color: #f2f2f2 !important;
 }
 
+.iconLink {
+    display: none;
+}
+
+.textLink {
+    display: block;
+}
+
 
 /* For medium size screens */
 @media only screen and (max-width: 992px) {
@@ -25,5 +33,13 @@ header {
 @media only screen and (max-width: 768px) {
     header {
         padding: 0 20px;
+    }
+
+    .textLink {
+        display: none;
+    }
+
+    .iconLink {
+        display: block;
     }
 }

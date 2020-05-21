@@ -31,11 +31,11 @@ function ResultCard(props) {
                 <div className="uk-width-expand">
                     <h4 className="uk-comment-title uk-margin-remove">{title}</h4>
                     <p className="uk-comment-meta uk-margin-remove-top">
-                        by { authors ? authors.join(", ") : "uknown" }
+                        by {authors ? authors.join(", ") : "uknown"}
                     </p>
                     <div>
-                        <a href={link} target="_blank" rel="noopener noreferrer" className="uk-button uk-button-default margin-right-small">View</a>
                         <button className="uk-button uk-button-default" onClick={() => saveBook(book)}>Save</button>
+                        <a href={link} target="_blank" rel="noopener noreferrer" className="uk-button uk-button-default margin-right-small">View</a>
                     </div>
                 </div>
             </div>
