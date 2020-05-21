@@ -21,15 +21,12 @@ function Search() {
     }
 
     return (
-        <div>
+        <div className="uk-width-expand searchContainer">
             <div className="searchForm">
                 <h3>Book Search</h3>
-                <form>
-                    <div className="form-group">
-                        <label>Book</label>
-                        <input className="form-control" id="bookInput" placeholder="Search books" ref={searchQuery} />
-                    </div>
-                    <button type="submit" className="btn btn-primary" onClick={searchBooks}>Submit</button>
+                <form className="uk-search uk-width-expand" onSubmit={searchBooks}>
+                    <a href="" className="uk-search-icon-flip" uk-search-icon="true" onClick={searchBooks}></a>
+                    <input className="uk-search-input" type="search" placeholder="Search..." ref={searchQuery} />
                 </form>
             </div>
             <BookContext.Provider value={books}>
