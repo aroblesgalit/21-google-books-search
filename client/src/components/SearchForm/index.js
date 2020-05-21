@@ -22,7 +22,6 @@ function SearchForm() {
             <h3>Book Search</h3>
             <form>
                 <div className="form-group">
-                    <label>Book</label>
                     <input className="form-control" id="bookInput" placeholder="Search books" ref={searchQuery}/>
                 </div>
                 <button type="submit" className="btn btn-primary" onClick={searchBooks}>Submit</button>
