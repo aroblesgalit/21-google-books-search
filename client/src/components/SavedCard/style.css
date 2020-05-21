@@ -4,47 +4,41 @@
     box-sizing: 0;
 }
 
-.resultCard {
+.saveCard {
     border: 1px solid #c0c0c0;
-}
-
-.resultCard img {
-    width: auto;
-}
-
-.resultBtns {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 4px;
-}
-
-.resultBtns button {
-    margin-left: 14px;
-    padding: 0 20px;
-    height: 32px;
-    background-color: #EB6864;
-    border: none;
+    padding: 20px;
     border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
+    margin-bottom: 20px;
 }
 
-.resultBtns button:hover {
-    background-color: rgb(223, 77, 72);
-}
-
-.resultBtns a {
-    margin-left: 14px;
-    padding: 6px 20px;
-    background-color: #EB6864;
+.saveCard a {
+    margin-left: 8px;
+    background-color: #386fcb;
+    color: #f2f2f2;
+    letter-spacing: 1.2px;
     border: none;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
 }
 
-.resultBtns a:hover {
-    text-decoration: none;
-    background-color: rgb(223, 77, 72);
+.saveCard a:hover, .saveCard a:focus {
+    background-color: #2059bd;
+    color: #f2f2f2;
+}
+
+.saveCard button {
+    background-color: #e83c4c;
+    color: #f2f2f2;
+    letter-spacing: 1.2px;
+    border: none;
+}
+
+.saveCard button:hover, .saveCard button:focus {
+    background-color: #d8293b;
+    color: #f2f2f2;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .topInfo {
+        flex-direction: column;
+    }
 }

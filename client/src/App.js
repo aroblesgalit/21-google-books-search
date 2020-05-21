@@ -10,15 +10,17 @@ function App() {
     <Router>
       <div>
         <Nav />
-        <Jumbotron />
-        <Switch>
-          <Route exact path="/">
-            <Search />
-          </Route>
-          <Route exact path="/saved">
-            <Saved />
-          </Route>
-        </Switch>
+        <div className="uk-flex mainContainer">
+          <Jumbotron />
+          <Switch>
+            <Route exact path="/">
+              <Search />
+            </Route>
+            <Route exact path="/saved">
+              <Saved />
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
   );

@@ -5,23 +5,26 @@ function SavedCard(props) {
     const { title, authors, description, image, link, deleteBook } = props;
 
     return (
-        <div className="card mb-3 resultCard" key={image}>
-            <div className="row no-gutters">
-                <div className="col-md-1">
-                    <img src={image} className="card-img img-fluid" alt="..." />
+        <article className="uk-comment saveCard" key={image}>
+            <div className="uk-comment-header uk-grid-medium uk-flex-middle topInfo" uk-grid="true">
+                <div className="uk-width-auto">
+                    <img className="uk-comment-avatar" src={image} width="80" height="80" alt="" />
                 </div>
-                <div className="col-md-11">
-                    <div className="card-body">
-                        <h5 className="card-title">{title}</h5>
-                        <p className="card-text"><small className="text-muted">By {authors.join(", ")}</small></p>
-                        <p className="card-text">{description}</p>             
+                <div className="uk-width-expand">
+                    <h4 className="uk-comment-title uk-margin-remove">{title}</h4>
+                    <p className="uk-comment-meta uk-margin-remove-top">
+                        by {authors ? authors.join(", ") : "uknown"}
+                    </p>
+                    <div>
+                        <button className="uk-button uk-button-default" onClick={deleteBook}>Delete</button>
+                        <a href={link} target="_blank" rel="noopener noreferrer" className="uk-button uk-button-default margin-right-small">View</a>
                     </div>
                 </div>
-                <div className="resultBtns">
-                    <a href={link} target="_blank" rel="noopener noreferrer">View</a><button onClick={deleteBook}>Delete</button>
-                </div>
             </div>
-        </div>
+            <div className="uk-comment-body">
+                <p>{description}</p>
+            </div>
+        </article>
     );
 }
 
