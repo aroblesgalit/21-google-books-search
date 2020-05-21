@@ -15,7 +15,7 @@
 
 
 /* For smaller screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 906px) {
     .mainContainer {
         flex-direction: column;
     }

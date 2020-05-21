@@ -7,5 +7,6 @@
 .resultContainer {
     margin: 20px;
     padding: 20px;
-    border: 1px solid #EB6864;
+    border: 1px solid #00bdc3 !important;
+    border-radius: 4px;
 }
