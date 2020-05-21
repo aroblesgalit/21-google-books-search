@@ -19,7 +19,7 @@
     border: none;
 }
 
-.resultCard a:hover {
+.resultCard a:hover, .resultCard a:focus {
     background-color: #2059bd;
     color: #f2f2f2;
 }
@@ -31,7 +31,7 @@
     border: none;
 }
 
-.resultCard button:hover {
+.resultCard button:hover, .resultCard button:focus {
     background-color: #00a3a8;
     color: #f2f2f2;
 }
