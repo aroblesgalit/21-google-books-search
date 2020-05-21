@@ -7,7 +7,7 @@ function Nav() {
       <Link className="navbar-brand" to="/">
         Google Books
       </Link>
-      <ul className="navbar-nav mr-auto">
+      <ul className="navbar-nav">
         <li className="nav-item">
           <Link className="nav-link" to="/">Search</Link>
         </li>
