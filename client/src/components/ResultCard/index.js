@@ -23,7 +23,7 @@ function ResultCard(props) {
 
 
     return (
-        <article className="uk-comment resultCard">
+        <article className="uk-comment resultCard" key={image}>
             <div className="uk-comment-header uk-grid-medium uk-flex-middle topInfo" uk-grid="true">
                 <div className="uk-width-auto">
                     <img className="uk-comment-avatar" src={image} width="80" height="80" alt="" />

@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
-.resultContainer {
+.savedContainer {
     margin: 20px;
     padding: 20px;
-    border: 1px solid #EB6864;
+    max-width: 900px;
+    border: 1px solid #00bdc3;
+    border-radius: 4px;
 }

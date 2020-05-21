@@ -24,7 +24,7 @@ function SavedContainer() {
     }
 
     return (
-        <div className="resultContainer">
+        <div className="savedContainer">
             <h3>Saved</h3>
             {books.length ? (
                 books.map(book =>
@@ -39,7 +39,7 @@ function SavedContainer() {
                     />
                 )
             ) : (
-                    <p>No Results to Display</p>
+                    <p>No Saved Books to Display</p>
                 )}
         </div>
     );
