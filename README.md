@@ -31,7 +31,7 @@ This was a homework assignment where we I created a new React-based Google Books
 
 * The layout includes at least two React Components for each page `Search` and `Saved`.
 
-* Used Bootstrap.
+* Used UIKit css framework.
 
 * Added the following Express routes for the app:
 
@@ -53,3 +53,6 @@ SO that I can buy or save them for later
 [Google Books Search](https://twenty-one-google-books-search.herokuapp.com/)
 
 ## Screenshots
+![Google Books Search - Search Page](./client/src/assets/gbs-search-screenshot.JPG)  
+![Google Books Search - Saved Page](./client/src/assets/gbs-saved-screenshot.JPG)  
+![Google Books Search - Mobile](./client/src/assets/gbs-mobile-screenshot.JPG)  
