@@ -1,8 +1,11 @@
 import React from "react";
+import "./style.css";
 
 function Footer() {
     return (
-        <a href="https://www.freepik.com/free-photos-vectors/people">People vector created by freepik - www.freepik.com</a>
+        <footer className="uk-text-center">
+            <a href="https://www.freepik.com/free-photos-vectors/people" target="_blank" rel="noopener noreferrer">People vector created by freepik</a>
+        </footer>
     );
 }
 

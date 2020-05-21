@@ -4,6 +4,7 @@ import Search from "./pages/Search";
 import Saved from "./pages/Saved";
 import Nav from "./components/Nav";
 import Jumbotron from "./components/Jumbotron";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer />
       </div>
     </Router>
   );
