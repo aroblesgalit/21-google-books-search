@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+header {
+    padding: 0 140px;
+    background-color: #2ba24c;
+}
+
+.logoMark, .navLink {
+    color: #f2f2f2 !important;
+}
+
+
+/* For medium size screens */
+@media only screen and (max-width: 992px) {
+    header {
+        padding: 0 80px;
+    }
+}
+
+/* For smaller screens */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 0 20px;
+    }
+}
